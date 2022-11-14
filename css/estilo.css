@@ -1,0 +1,252 @@
+/*Reseteo de CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Códigos de color: #847c7c (gris) y #d2c6b8 (rosita)*/
+
+body{
+    margin: 10px;
+    padding: 10px;
+}
+
+header{
+    z-index: 100;
+    color: #847c7c;
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+/* Grid para Navbar superior (Buscador + Logo + Botones) */
+.navbar{
+    display: grid;
+    grid-column: repeat(3,1fr 2fr 1fr);
+    grid-row: 1, 1fr;
+    grid-template-areas: 
+    "buscador logo logo carrito";
+}
+.container-fluid{
+    grid-area: buscador;
+}
+.logoHeader{
+    grid-area: logo;
+}
+.botonCarrito{
+    grid-area: carrito;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+main{
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div1{
+    margin:10px 10px 100px 10px;
+    padding: 10px;
+    font-family: 'Lora', serif;
+}
+.div1 h1{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    background-color: #847c7c;
+    color: aliceblue;
+}
+.div1 p{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.div2{
+    margin:10px 10px 50px 10px;
+    padding: 10px;
+}
+.div2 h1{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    color: #847c7c;
+    background-color: bisque;
+}
+.div2 h5, h6, p{
+    font-family: 'Lora', serif;
+}
+.div2 p{
+    font-size: 15px;
+    font-style: italic;
+}
+.div2 a{
+    font-family: 'Tenor Sans', sans-serif;
+    text-transform: uppercase;
+}
+.div2 button{
+    font-family: 'Tenor Sans', sans-serif;
+}
+.div2 button:hover{
+    height: 40px;
+}
+.div2 .col{
+    margin-top: 50px;
+}
+
+.div3{
+    margin: 30px 10px 10px 10px;
+    padding: 10px;
+}
+
+.div4{
+    margin:10px 10px 10px 10px;
+    padding: 10px;
+}
+.div4 h1{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    color: #847c7c;
+    background-color: bisque;
+    margin: 0px 0px 40px 0px;
+}
+.div4img{
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div4bis{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 4px;
+    margin: 50px 0px 0px 0px;
+}
+
+.div2 h2{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-style: normal;
+    color: #847c7c;
+    background-color: bisque;
+    margin: 90px 0px 0px 0px;
+}
+
+.pNosotros{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0px 0px 0px 0px;
+    padding: 40px;
+    background-image: url(/img/telas.jpg);
+    background-size: cover;
+}
+
+.div5{
+    margin:10px 10px 10px 10px;
+    padding: 10px;
+}
+.div5 h3{
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #847c7c;
+    margin: 40px 0px 0px 0px;
+}
+.div5 p{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+}
+.div5 ul{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.div5 ul li{
+    list-style-type: disc;
+}
+
+.formulario{
+    padding: 10px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-image: url(/img/manta-almohadon.png);
+    background-size: cover;
+}
+.formulario button{
+    margin-inline: 0px 20px;
+}
+
+.carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+.table__producto{
+    display: flex;
+}
+.table__producto > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+.table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+footer{
+    margin: 10px;
+    padding: 10px;
+}
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1, 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "logoFooter contacto redes newsletter";
+    justify-items: center;
+    align-items: flex-start;
+}
+.logoFooter{
+    align-self: center;
+}
+footer h5{
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: bold;
+}
+footer svg{
+    margin: 10px;
+}
+footer form{
+    font-family: 'Lora', serif;
+}
