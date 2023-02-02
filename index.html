@@ -23,11 +23,11 @@
 
 <body>
     <header class="container-fluid position-sticky top-0">
-        <div> <!-- Div contenedor de Doble Navbar(superior+inferior) -->
+        <div> <!--Contenedor de Doble Navbar(superior+inferior)-->
 
-            <div> <!--Div contenedor de Navbar superior-->
+            <div> <!--Contenedor de Navbar superior (buscador, logo y botón al carrito)-->
                 <nav class="navbar bg-light">
-                    <div class="container-fluid"> <!--Buscador-->
+                    <div class="container-fluid"> <!--Contenedor del buscador-->
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                             <button class="btn btn-outline-secondary" type="submit">
@@ -36,13 +36,13 @@
                                 </svg>
                             </button>
                         </form>
-                    </div> <!--Buscador-->
+                    </div>
 
-                    <div class="logoHeader"> <!--Logo-->
+                    <div class="logoHeader"> <!--Contenedor del logo-->
                         <img src="./img/Logo/logo.jpg" width="90px" height="90px" class="rounded" alt="Logo">
-                    </div> <!--Logo-->
+                    </div>
 
-                    <div class="botonCarrito"> <!--Botón carrito-->
+                    <div class="botonCarrito"> <!--Contenedor del botón carrito-->
                         <div class="container-fluid">
                             <a type="button" href="./carrito.html" class="btn btn-outline-secondary btn-mm">
                                 Carrito
@@ -51,11 +51,11 @@
                                 </svg>
                             </a>
                         </div>
-                    </div> <!--Botón carrito-->
+                    </div>
                 </nav>
-            </div> <!--Div contenedor de Navbar superior-->
+            </div>
 
-            <div> <!-- Div contenedor de Navbar inferior-->
+            <div> <!--Contenedor de Navbar inferior (menú de opciones)-->
                 <nav class="navbar navbar-expand-lg bg-light">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,12 +83,12 @@
                         </div>
                     </div>
                 </nav>
-            </div> <!-- Div contenedor de Navbar inferior-->
-        </div> <!-- Div contenedor de Doble Navbar(superior + inferior) -->
+            </div>
+        </div>
     </header>
 
     <main>
-        <section>
+        <section> <!--Sección Bienvenida-->
             <div class="div1">
                 <h1>
                     ¡Animate a tener la casa de tus sueños!
@@ -99,17 +99,63 @@
             </div>
         </section>
 
-        <section> <!-- Cards de Bootstrap con una imagen y datos de cada producto -->
+        <section> <!--Sección "Nuestros productos" con vista previa de 4 productos-->
             <div class="div2">
                 <h1>
                     Nuestros Productos
                 </h1>
 
-                <div class="row row-cols-1 row-cols-md-4 g-4" id="contenedorNuestrosProductos">
-                    <!--El contenido de este div está creado en la hoja de JS-->
+                <div class="row row-cols-1 row-cols-md-4 g-4"> <!--Contenedor con 4 cards con sus respectivos productos-->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/Productos/almohadon-liso-2.png" class="card-img-top" alt="almohadon">
+                            <div class="card-body">
+                                <h5 class="card-title">Almohadón terracota</h5>
+                                <h6 class="card-title">$1200</h6>
+                                <p class="card-text">3 cuotas sin interés de $400,00</p>
+                                <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/Productos/canasto-yute-1.png" class="card-img-top" alt="canasto de yute">
+                            <div class="card-body">
+                                <h5 class="card-title">Canasto de yute</h5>
+                                <h6 class="card-title">$3000</h6>
+                                <p class="card-text">3 cuotas sin interés de $1000,00</p>
+                                <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/Productos/combo-aromas-1.png" class="card-img-top" alt="difusor y spray">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo: difusor + spray</h5>
+                                <h6 class="card-title">$1500</h6>
+                                <p class="card-text">3 cuotas sin interés de $500,00</p>
+                                <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/Productos/manta-waffle-3.png" class="card-img-top" alt="manta waffle">
+                            <div class="card-body">
+                                <h5 class="card-title">Manta Waffle</h5>
+                                <h6 class="card-title">$2400</h6>
+                                <p class="card-text">3 cuotas sin interés de $800,00</p>
+                                <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="div3"> <!--Botón linkeado a productos.html-->
+                <div class="div3"> <!--Contenedor del botón "Ver todos" linkeado a productos.html-->
                     <div class="d-grid gap-1 col-6 mx-auto">
                         <a href="./productos.html" class="btn btn-outline-secondary shadow">Ver todos</a>
                     </div> 
@@ -119,25 +165,25 @@
     </main>
 
     <footer>
-        <nav class="navbar bg-light">
-            <div class="footerContainer">
-                <div class="logoFooter">
+        <nav class="navbar bg-light"> <!--Contenedor nav con elementos del Footer-->
+            <div class="footerContainer"> 
+                <div class="logoFooter"> <!--Contenedor del logo-->
                     <a href="#">
                         <img src="./img/Logo/logo.jpg" alt="Ir arriba" width="100px" class="shadow rounded">
                     </a>
                 </div>
 
-                <div class="contacto navbar-text">
+                <div class="contacto navbar-text"> <!--Contenedor "Contactanos"-->
                     <h5>
                         Contactanos
                     </h5>
                     <ul>
-                        <li>Teléfono: +54 11 0000 0000</li> 
+                        <li>Teléfono: +54 11 3025 7059</li> 
                         <li>Correo: contacto@sarondeco.com</li> 
                         <li>Ubicación: Gral. San Martín (CP. 1650), Buenos Aires, Argentina</li> 
                     </ul>
                 </div>
-                <div class="redes navbar-text">
+                <div class="redes navbar-text"> <!--Contenedor "Redes sociales"-->
                     <h5>
                         Redes sociales
                     </h5>
@@ -153,7 +199,7 @@
                     </a>
                 </div>
 
-                <div class="newsletter navbar-text">
+                <div class="newsletter navbar-text"> <!--Contenedor newsletter-->
                     <h5>
                         ¡Recibí ofertas!
                     </h5>
@@ -174,9 +220,5 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-    <!--Link a JS-->
-    <script src="./main.js"></script>
-
 </body>
 </html>
